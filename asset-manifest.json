@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/logiclike/static/css/main.c0658eff.css",
-    "main.js": "/logiclike/static/js/main.412e143b.js",
+    "main.css": "/logiclike/static/css/main.f49f42b5.css",
+    "main.js": "/logiclike/static/js/main.fd685317.js",
     "static/js/453.12751f5b.chunk.js": "/logiclike/static/js/453.12751f5b.chunk.js",
+    "static/media/NunitoSans_7pt_Expanded-Bold.ttf": "/logiclike/static/media/NunitoSans_7pt_Expanded-Bold.667cdc4d893975241383.ttf",
     "index.html": "/logiclike/index.html",
-    "main.c0658eff.css.map": "/logiclike/static/css/main.c0658eff.css.map",
-    "main.412e143b.js.map": "/logiclike/static/js/main.412e143b.js.map",
+    "main.f49f42b5.css.map": "/logiclike/static/css/main.f49f42b5.css.map",
+    "main.fd685317.js.map": "/logiclike/static/js/main.fd685317.js.map",
     "453.12751f5b.chunk.js.map": "/logiclike/static/js/453.12751f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0658eff.css",
-    "static/js/main.412e143b.js"
+    "static/css/main.f49f42b5.css",
+    "static/js/main.fd685317.js"
   ]
 }
