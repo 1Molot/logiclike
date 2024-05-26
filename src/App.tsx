@@ -1,14 +1,9 @@
 import React from 'react';
-import {SideBar} from "./componnets/sideBar";
 import './style/global.scss';
+import {Courses} from "./componnets/Courses";
 
 function App() {
-
-    return (
-        <>
-            <SideBar/>
-        </>
-    );
+    return <Courses/>
 }
 
 export default App;
