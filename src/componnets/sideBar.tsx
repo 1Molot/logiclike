@@ -1,6 +1,5 @@
-import React, {ChangeEvent, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import './sideBar.scss';
 
 type Course = {
     name: string;
@@ -31,32 +30,35 @@ export const SideBar = () => {
     }, []);
 
 
-    const handleTagChange = (event: ChangeEvent<HTMLSelectElement>) => {
-        setTagFilter(event.target.value);
+    const handleTagChange = (tag: string) => {
+        setTagFilter(tag);
     };
 
     return (
-        <div className='container'>
-            <div className='wrapper'>
-                <div className='side-bar'>
-                    <select onChange={handleTagChange} value={tagFilter} className='select'>
-                        <option value="" className='option'>Все темы</option>
-                        {Array.from(new Set(courses.flatMap((course) => course.tags))).map((tag) => (
-                            <option key={tag} value={tag} className='option'>
-                                {tag}
-                            </option>
-                        ))}
-                    </select>
+        <div className='wrapper'>
+            <div className='side-bar-wrapper'>
+                <div className="side-bar">
+                    <div onClick={() => setTagFilter('')}
+                         className={`side-bar__item ${tagFilter === '' ? 'active' : ''}`}>Все Темы
+                    </div>
+                    {Array.from(new Set(courses.flatMap((course) => course.tags))).map((tag) => (
+                        <div key={tag} onClick={() => handleTagChange(tag)}
+                             className={`side-bar__item ${tagFilter === tag ? 'active' : ''}`}>
+                            {tag}
+                        </div>
+                    ))}
                 </div>
+            </div>
+            <div className='content-wrapper'>
                 <div className='content'>
                     {courses
                         .filter((course) => tagFilter === '' || course.tags.includes(tagFilter))
                         .map((course) => (
-                            <div key={course.id} className="cards">
-                                <div style={{ backgroundColor: course.bgColor }} className='image'>
-                                    <img src={course.image} alt="img" style={{ width: '100%', height: '100%' }} />
+                            <div key={course.id} className="content__item">
+                                <div style={{backgroundColor: course.bgColor}} className='content__image'>
+                                    <img src={course.image} alt="img"/>
                                 </div>
-                                <h4 className='name'>{course.name}</h4>
+                                <h4 className='content__name'>{course.name}</h4>
                             </div>
                         ))}
                 </div>
