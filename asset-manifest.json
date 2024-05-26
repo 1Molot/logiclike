@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/logiclike/static/css/main.04cbe45d.css",
-    "main.js": "/logiclike/static/js/main.c36be8c4.js",
+    "main.css": "/logiclike/static/css/main.c0658eff.css",
+    "main.js": "/logiclike/static/js/main.412e143b.js",
     "static/js/453.12751f5b.chunk.js": "/logiclike/static/js/453.12751f5b.chunk.js",
     "index.html": "/logiclike/index.html",
-    "main.04cbe45d.css.map": "/logiclike/static/css/main.04cbe45d.css.map",
-    "main.c36be8c4.js.map": "/logiclike/static/js/main.c36be8c4.js.map",
+    "main.c0658eff.css.map": "/logiclike/static/css/main.c0658eff.css.map",
+    "main.412e143b.js.map": "/logiclike/static/js/main.412e143b.js.map",
     "453.12751f5b.chunk.js.map": "/logiclike/static/js/453.12751f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04cbe45d.css",
-    "static/js/main.c36be8c4.js"
+    "static/css/main.c0658eff.css",
+    "static/js/main.412e143b.js"
   ]
 }
